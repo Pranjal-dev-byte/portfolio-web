@@ -1,0 +1,56 @@
+.nav {
+	&__container {
+		position: relative;
+		padding: 1.5rem 2.5rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background: #8e2de2; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(
+			to right,
+			#4a00e0,
+			#8e2de2
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+	&__list {
+		// width: 100%;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item {
+		margin: 1rem 2rem;
+	}
+	&__link {
+		transition: color .2s;
+		&:link,
+		&:visited {
+			text-decoration: none;
+			color: $color-white;
+			text-transform: uppercase;
+			font-size: 1.8rem;
+		}
+		&:hover,
+		&:active {
+			color: $color-hover-link;
+		}
+	}
+	&__logo {
+		height: 5rem;
+		margin-left: 2rem;
+		&-content {
+			margin-top: 2px;
+			height: inherit;
+		}
+	}
+}
+.fixed nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
