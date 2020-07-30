@@ -1,5 +1,6 @@
 .nav {
 	&__container {
+		z-index: 3;
 		position: relative;
 		padding: 1.5rem 2.5rem;
 		display: flex;

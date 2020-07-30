@@ -102,11 +102,11 @@ body {
 .btn, .btn:visited, .btn:link {
   padding: 1rem 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 0.5rem black;
+  box-shadow: 0 0.5rem 0.5rem white;
   color: white;
-  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: -webkit-linear-gradient(to right, #396afc, #2948ff);
+  background: linear-gradient(to right, #396afc, #2948ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4a00e0, #8e2de2);
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -115,7 +115,8 @@ body {
   position: relative;
   outline: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: -1; }
 
 .btn:hover {
   transform: translateY(-1px);
@@ -161,6 +162,40 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.footer__container {
+  z-index: 3;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  padding: 2.5rem 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #8e2de2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #8e2de2); }
+
+.footer__name {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  background: -webkit-linear-gradient(to bottom, #a6ffcb, #12d8fa, #1fa2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #a6ffcb, #12d8fa, #1fa2ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
+
+.footer__heart {
+  padding: 1rem;
+  color: red; }
+  .footer__heart--img {
+    height: 4rem; }
+
 .header {
   position: relative;
   height: 100vh;
@@ -170,6 +205,7 @@ body {
   align-items: center; }
 
 .nav__container {
+  z-index: 3;
   position: relative;
   padding: 1.5rem 2.5rem;
   display: flex;

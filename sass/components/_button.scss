@@ -6,8 +6,8 @@
 		border-radius: 1rem;
 		box-shadow: 0 .5rem .5rem $color-white;
 		color: $color-white;
-		background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #4a00e0, #8e2de2);
+		background: -webkit-linear-gradient(to right, #396afc, #2948ff);
+		background: linear-gradient(to right, #396afc, #2948ff); /* Chrome 10-25, Safari 5.1-6 */
 		text-align: center;
 		display: inline-block;
 		text-decoration: none;
@@ -17,6 +17,7 @@
 		outline: none;
 		border: none;
 		cursor: pointer;
+		z-index: -1;
 	}
 	&:hover {
 		transform: translateY(-1px);
