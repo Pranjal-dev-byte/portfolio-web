@@ -57,7 +57,7 @@ body {
         left: 0; }
 
 .heading__secondary {
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: .2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -81,9 +81,11 @@ body {
 .u-margin-small {
   margin-bottom: 1rem; }
 
+.u-margin-medium-top {
+  margin-top: 3rem; }
+
 .about__content {
-  max-width: 100ch;
-  margin-bottom: 100rem; }
+  max-width: 100ch; }
   .about__content--block {
     padding: 2rem 3rem; }
   .about__content--text {
@@ -96,6 +98,54 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; }
+
+.btn, .btn:visited, .btn:link {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 0.5rem black;
+  color: white;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s;
+  position: relative;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1) scaleY(1.2);
+    opacity: 0; }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 0.1rem rgba(0, 0, 0, 0.2); }
+
+.project {
+  border-bottom: 0.5px solid #b4b1b1;
+  display: flex;
+  justify-content: space-around;
+  height: 30rem;
+  padding: 1rem 2rem;
+  margin-bottom: 5rem; }
+  .project__img {
+    margin-right: 10rem;
+    height: 25rem; }
+  .project__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    margin-left: 10rem;
+    padding: 5rem 4rem 1rem 4rem;
+    height: inherit; }
 
 .bg-video {
   position: absolute;
@@ -172,3 +222,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 5rem; }
+
+.section__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; }
