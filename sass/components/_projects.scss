@@ -2,12 +2,11 @@
 	border-bottom: .5px solid hsl(0, 2%, 70%);
 	display: flex;
 	justify-content: space-around;
-	// align-items: stretch;
-	height: 30rem;
+	height: 40rem;
 	padding: 1rem 2rem;
 	margin-bottom: 5rem;
 	&__img {
-		margin-right: 10rem;
+		margin: 0 4rem 0 2rem;
 		height: 25rem;
 	}
 	&__text {
@@ -15,8 +14,23 @@
 		flex-direction: column;
 		justify-content: stretch;
 		align-items: flex-start;
-		margin-left: 10rem;
-		padding: 5rem 4rem 1rem 4rem;
+		margin-left: 2rem;
+		padding: 0 4rem 1rem 4rem;
+		max-width: 60ch;
 		height: inherit;
+		&--section {
+			padding: .5rem 0 .5rem 0;
+		}
+		&--desc {
+			padding: 1rem 0 1rem 0;
+		}
+	}
+	&__link {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			color: $color-white;
+			text-transform: uppercase;
+		}
 	}
 }
