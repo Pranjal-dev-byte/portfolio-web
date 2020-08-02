@@ -5,6 +5,18 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
 
 body {
   box-sizing: border-box;
@@ -32,6 +44,9 @@ body {
     font-size: 4.8rem;
     font-weight: 600;
     padding: .6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__primary--main {
+        letter-spacing: .5rem; } }
   .heading__primary--sub {
     font-size: 2.5rem;
     letter-spacing: 1.2rem;
@@ -40,6 +55,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__primary--sub {
+        letter-spacing: .5rem; } }
   .heading__primary--icons {
     padding: .6rem; }
   .heading__primary--icon {
@@ -76,6 +94,9 @@ body {
 
 .u-margin-big {
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-big {
+      margin-bottom: 0; } }
 
 .u-margin-small {
   margin-bottom: 1rem; }
@@ -143,18 +164,47 @@ body {
   height: 40rem;
   padding: 1rem 2rem;
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .project:first-of-type {
+      height: 50rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .project {
+      height: 56rem; }
+      .project:first-of-type {
+        height: 65rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .project {
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      margin: 4rem 0; } }
   .project__img {
     margin: 0 4rem 0 2rem;
     height: 25rem; }
+    @media only screen and (max-width: 75em) {
+      .project__img {
+        margin: 0 0 0 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .project__img:first-of-type {
+        height: 20rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .project__img {
+        margin-bottom: 2rem; } }
   .project__text {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 2rem;
     padding: 0 4rem 1rem 4rem;
     max-width: 60ch;
     height: inherit; }
+    @media only screen and (max-width: 75em) {
+      .project__text {
+        margin: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .project__text {
+        padding: 0; } }
     .project__text--section {
       padding: .5rem 0 .5rem 0; }
     .project__text--desc {
