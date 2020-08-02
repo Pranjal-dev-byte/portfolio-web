@@ -1,5 +1,8 @@
 .u-margin-big {
 	margin-bottom: 4rem;
+	@include respond(phone) {
+		margin-bottom: 0;
+	}
 }
 .u-margin-small {
 	margin-bottom: 1rem;
