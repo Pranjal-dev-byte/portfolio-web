@@ -10,3 +10,8 @@
 .u-margin-medium-top {
 	margin-top: 2.5rem;
 }
+.u-hidden {
+	@include respond(phone) {
+		display: none !important;
+	}
+}
