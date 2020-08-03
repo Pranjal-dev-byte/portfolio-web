@@ -104,6 +104,10 @@ body {
 .u-margin-medium-top {
   margin-top: 2.5rem; }
 
+@media only screen and (max-width: 37.5em) {
+  .u-hidden {
+    display: none !important; } }
+
 .about__content {
   max-width: 100ch; }
   .about__content--block {
@@ -275,7 +279,6 @@ body {
   position: relative;
   padding: 1.5rem 2.5rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background: #8e2de2;
@@ -284,6 +287,9 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4a00e0, #8e2de2);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  @media only screen and (max-width: 37.5em) {
+    .nav__container {
+      flex-direction: column; } }
 
 .nav__list {
   list-style-type: none;
@@ -293,9 +299,12 @@ body {
 
 .nav__item {
   margin: 1rem 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__item {
+      margin: 2.5rem 2rem 0 2rem; } }
 
 .nav__link {
-  transition: color .2s; }
+  transition: all .2s; }
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
     color: white;
@@ -303,14 +312,34 @@ body {
     font-size: 1.8rem; }
   .nav__link:hover, .nav__link:active {
     color: #ffcd05; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__link {
+      margin: 0 1rem;
+      font-size: 2rem !important; } }
 
 .nav__logo {
+  outline: none;
   height: 5rem;
-  margin-left: 2rem;
-  cursor: pointer; }
+  margin-left: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__logo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: .4rem; } }
   .nav__logo-content {
+    cursor: pointer;
     margin-top: 2px;
     height: inherit; }
+
+.nav__ham {
+  cursor: pointer;
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__ham {
+      height: 3rem;
+      display: inline-block; } }
 
 .fixed nav {
   position: fixed;
