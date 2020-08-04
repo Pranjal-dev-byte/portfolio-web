@@ -126,7 +126,7 @@ body {
 
 .btn, .btn:visited, .btn:link {
   color: white;
-  box-shadow: 0 0.7rem 1.2rem black;
+  box-shadow: 0.1rem 0.3rem 0.5rem black;
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -139,7 +139,7 @@ body {
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0.6rem 1.8rem 0.5rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1) scaleY(1.2);
     opacity: 0; }
@@ -242,11 +242,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #8e2de2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4a00e0, #8e2de2); }
+  background: linear-gradient(to right, #2948ff, #396afc); }
 
 .footer__name {
   text-transform: uppercase;
@@ -273,6 +269,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .header__resume:link, .header__resume:visited {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.4rem; }
+  .header__resume:hover, .header__resume:active {
+    color: white; }
 
 .nav__container {
   z-index: 3;
@@ -281,11 +284,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8e2de2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  -webkit-background: linear-gradient(to right, #2948ff, #396afc);
+  background: linear-gradient(to right, #2948ff, #396afc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   @media only screen and (max-width: 37.5em) {
     .nav__container {
@@ -307,11 +309,11 @@ body {
   transition: all .2s; }
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
-    color: white;
+    color: #f0f0f0;
     text-transform: uppercase;
     font-size: 1.8rem; }
   .nav__link:hover, .nav__link:active {
-    color: #ffcd05; }
+    color: white; }
   @media only screen and (max-width: 37.5em) {
     .nav__link {
       margin: 0 1rem;

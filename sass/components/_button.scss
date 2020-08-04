@@ -3,7 +3,7 @@
 	&:visited,
 	&:link {
 		color: $color-white;
-		box-shadow: 0 .7rem 1.2rem $color-black;
+		box-shadow: 0.1rem .3rem .5rem $color-black;
 		text-align: center;
 		display: inline-block;
 		text-decoration: none;
@@ -16,7 +16,7 @@
 	}
 	&:hover {
 		transform: translateY(-1px);
-		box-shadow: 0 1rem 2rem 1rem rgba($color-black, 0.2);
+		box-shadow: 0.6rem 1.8rem .5rem rgba($color-black, 0.2);
 		&::after {
 			transform: scaleX(1) scaleY(1.2);
 			opacity: 0;
