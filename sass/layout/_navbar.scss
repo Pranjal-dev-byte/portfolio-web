@@ -6,16 +6,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: #8e2de2; /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(
-			to right,
-			#4a00e0,
-			#8e2de2
-		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		-webkit-background: linear-gradient(to right, #2948ff, #396afc);
+
+		background: linear-gradient(to right, #2948ff, #396afc);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 		@include respond(phone) {
-			flex-direction: column;
-			// align-items: center;
+			flex-direction: column; // align-items: center;
 		}
 	}
 	&__list {
@@ -35,13 +32,13 @@
 		&:link,
 		&:visited {
 			text-decoration: none;
-			color: $color-white;
+			color: hsl(0, 0%, 94%);
 			text-transform: uppercase;
 			font-size: 1.8rem;
 		}
 		&:hover,
 		&:active {
-			color: $color-hover-link;
+			color: $color-white;
 		}
 		@include respond(phone) {
 			margin: 0 1rem;
