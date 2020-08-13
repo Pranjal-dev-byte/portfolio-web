@@ -286,9 +286,7 @@ body {
   align-items: center;
   -webkit-background: linear-gradient(to right, #2948ff, #396afc);
   background: linear-gradient(to right, #2948ff, #396afc);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  box-shadow: .1rem .4rem .7rem black; }
   @media only screen and (max-width: 37.5em) {
     .nav__container {
       flex-direction: column; } }
