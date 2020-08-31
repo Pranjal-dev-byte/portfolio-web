@@ -3,7 +3,7 @@
 	&:visited,
 	&:link {
 		color: $color-white;
-		box-shadow: 0.1rem .3rem .5rem $color-black;
+		box-shadow: 0.1rem .3rem .5rem $color-shadow;
 		text-align: center;
 		display: inline-block;
 		text-decoration: none;
@@ -16,19 +16,19 @@
 	}
 	&:hover {
 		transform: translateY(-1px);
-		box-shadow: 0.6rem 1.8rem .5rem rgba($color-black, 0.2);
+		box-shadow: 0.6rem .8rem .5rem rgba($color-shadow, 0.2);
 		&::after {
-			transform: scaleX(1) scaleY(1.2);
+			transform: scaleX(1) scaleY(1);
 			opacity: 0;
 		}
 	}
 	&:active {
 		transform: translateY(-1px);
-		box-shadow: 0 1rem .1rem rgba($color-black, 0.2);
+		box-shadow: 0 1rem .1rem rgba($color-shadow, 0.2);
 	}
 	&-blue {
 		border-radius: .5rem;
-		padding: 1rem 2rem;
+		padding: 1.4rem 2rem;
 		background: #396afc;
 		background: -webkit-linear-gradient(to right, #2948ff, #396afc);
 		background: linear-gradient(to right, #2948ff, #396afc);

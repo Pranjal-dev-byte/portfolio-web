@@ -25,7 +25,7 @@ body {
 *,
 ::before,
 ::after {
-  font-family: 'Titillium Web', sans-serif; }
+  font-family: 'Inter', sans-serif; }
 
 body {
   font-size: 1.6rem;
@@ -126,7 +126,7 @@ body {
 
 .btn, .btn:visited, .btn:link {
   color: white;
-  box-shadow: 0.1rem 0.3rem 0.5rem black;
+  box-shadow: 0.1rem 0.3rem 0.5rem rgba(52, 94, 253, 0.4);
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -139,18 +139,18 @@ body {
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0.6rem 1.8rem 0.5rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0.6rem 0.8rem 0.5rem rgba(52, 94, 253, 0.2); }
   .btn:hover::after {
-    transform: scaleX(1) scaleY(1.2);
+    transform: scaleX(1) scaleY(1);
     opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 1rem 0.1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 0.1rem rgba(52, 94, 253, 0.2); }
 
 .btn-blue {
   border-radius: .5rem;
-  padding: 1rem 2rem;
+  padding: 1.4rem 2rem;
   background: #396afc;
   background: -webkit-linear-gradient(to right, #2948ff, #396afc);
   background: linear-gradient(to right, #2948ff, #396afc); }
@@ -286,7 +286,7 @@ body {
   align-items: center;
   -webkit-background: linear-gradient(to right, #2948ff, #396afc);
   background: linear-gradient(to right, #2948ff, #396afc);
-  box-shadow: .1rem .4rem .7rem black; }
+  box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem rgba(52, 94, 253, 0.4); }
   @media only screen and (max-width: 37.5em) {
     .nav__container {
       flex-direction: column; } }
