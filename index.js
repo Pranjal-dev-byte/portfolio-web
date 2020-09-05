@@ -1,3 +1,4 @@
+// Stcky Navbar
 const nav = document.querySelector('.nav__container');
 const topToNav = nav.offsetTop;
 const main = document.querySelector('body');
@@ -26,6 +27,7 @@ hamIcon.addEventListener('click', () => {
 	}
 });
 
+// Typewriter Animation
 const words = [ 'Web Developer', 'Full Stack Developer', 'Software Engineer' ];
 let masterTL = gsap.timeline({ repeat: -1 });
 
@@ -34,3 +36,12 @@ words.forEach((word) => {
 	tl.to('.heading__primary--sub', { duration: 1.5, text: word });
 	masterTL.add(tl);
 });
+
+// Hiding video for mobile resolution
+const bgImg = document.querySelector('#bg-img');
+const bgVid = document.querySelector('#bg-vid');
+if (window.screen.width <= 767) {
+	console.log('triggered');
+	bgVid.classList.add('u-hidden');
+	bgImg.classList.remove('u-hidden');
+}
