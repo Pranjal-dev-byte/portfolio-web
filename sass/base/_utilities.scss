@@ -1,5 +1,5 @@
 .u-margin-big {
-	margin-bottom: 4rem;
+	margin-bottom: 10rem;
 	@include respond(phone) {
 		margin-bottom: 0;
 	}
@@ -10,8 +10,12 @@
 .u-margin-medium-top {
 	margin-top: 2.5rem;
 }
+.u-margin-medium {
+	margin-bottom: 6rem;
+}
 .u-hidden {
 	@include respond(phone) {
 		display: none !important;
 	}
 }
+

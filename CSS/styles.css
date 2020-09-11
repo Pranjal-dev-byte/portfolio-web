@@ -94,7 +94,7 @@ body {
   display: inline-block; }
 
 .u-margin-big {
-  margin-bottom: 4rem; }
+  margin-bottom: 10rem; }
   @media only screen and (max-width: 37.5em) {
     .u-margin-big {
       margin-bottom: 0; } }
@@ -104,6 +104,9 @@ body {
 
 .u-margin-medium-top {
   margin-top: 2.5rem; }
+
+.u-margin-medium {
+  margin-bottom: 6rem; }
 
 @media only screen and (max-width: 37.5em) {
   .u-hidden {
@@ -126,6 +129,7 @@ body {
   color: transparent; }
 
 .btn, .btn:visited, .btn:link {
+  width: 15rem;
   color: white;
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(52, 94, 253, 0.4);
   text-align: center;
@@ -199,7 +203,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    align-items: center;
     margin-left: 2rem;
     padding: 0 4rem 1rem 4rem;
     max-width: 60ch;

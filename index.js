@@ -37,11 +37,10 @@ words.forEach((word) => {
 	masterTL.add(tl);
 });
 
-// Hiding video for mobile resolution
+// Hiding bg-video for mobile resolution
 const bgImg = document.querySelector('#bg-img');
 const bgVid = document.querySelector('#bg-vid');
 if (window.screen.width <= 767) {
-	console.log('triggered');
 	bgVid.classList.add('u-hidden');
 	bgImg.classList.remove('u-hidden');
 }
