@@ -5,7 +5,7 @@ gsap.fromTo(
 	'#imgOne',
 	{ x: -80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 2,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -16,7 +16,7 @@ gsap.fromTo(
 	'#textOne',
 	{ x: 80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 2,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -27,7 +27,7 @@ gsap.fromTo(
 	'#imgTwo',
 	{ x: -80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 3,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -38,7 +38,7 @@ gsap.fromTo(
 	'#textTwo',
 	{ x: 80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 3,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -49,7 +49,7 @@ gsap.fromTo(
 	'#imgThree',
 	{ x: -80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 3.5,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -60,7 +60,7 @@ gsap.fromTo(
 	'#textThree',
 	{ x: 80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 3.5,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -71,7 +71,7 @@ gsap.fromTo(
 	'#imgFour',
 	{ x: -80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 4,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -82,7 +82,7 @@ gsap.fromTo(
 	'#textFour',
 	{ x: 80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 4,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -93,7 +93,7 @@ gsap.fromTo(
 	'#imgFive',
 	{ x: -80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 4,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',
@@ -104,7 +104,7 @@ gsap.fromTo(
 	'#textFive',
 	{ x: 80, opacity: 0 },
 	{
-		duration: 1,
+		duration: 4,
 		opacity: 1,
 		x: 0,
 		ease: 'ease',

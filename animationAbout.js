@@ -3,7 +3,7 @@ gsap.fromTo(
 	'#blockOne',
 	{ x: 180, opacity: 0 },
 	{
-		duration: 1.5,
+		duration: 2.5,
 		opacity: 1,
 		x: 0,
 		ease: 'bounce',
@@ -14,7 +14,7 @@ gsap.fromTo(
 	'#blockTwo',
 	{ x: -180, opacity: 0 },
 	{
-		duration: 2,
+		duration: 3,
 		opacity: 1,
 		x: 0,
 		ease: 'bounce',
@@ -25,7 +25,7 @@ gsap.fromTo(
 	'#blockThree',
 	{ x: 180, opacity: 0 },
 	{
-		duration: 2.5,
+		duration: 4,
 		opacity: 1,
 		x: 0,
 		ease: 'bounce',
