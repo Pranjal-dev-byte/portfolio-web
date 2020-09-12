@@ -213,6 +213,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .project__text {
         padding: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .project__text {
+        align-items: center; } }
     .project__text--section {
       padding: .5rem 0 .5rem 0; }
     .project__text--desc {

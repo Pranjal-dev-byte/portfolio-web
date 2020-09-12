@@ -52,6 +52,9 @@
 		@include respond(tab-port) {
 			padding: 0;
 		}
+		@include respond(phone) {
+			align-items: center;;
+		}
 
 		&--section {
 			padding: .5rem 0 .5rem 0;
