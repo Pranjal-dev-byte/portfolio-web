@@ -17,7 +17,6 @@ gsap.fromTo(
 		duration: 4.5,
 		opacity: 1,
 		y: 0,
-		delay: 1,
 		ease: 'bounce'
 	}
 );
