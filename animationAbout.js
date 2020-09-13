@@ -1,5 +1,16 @@
 // About scroll animation
 gsap.fromTo(
+	'#aboutHeading',
+	{ y: 180, opacity: 0 },
+	{
+		duration: 1,
+		opacity: 1,
+		y: 0,
+		ease: 'ease',
+		scrollTrigger: '#aboutHeading'
+	}
+);
+gsap.fromTo(
 	'#blockOne',
 	{ x: 180, opacity: 0 },
 	{

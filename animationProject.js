@@ -1,6 +1,16 @@
 // Projects scroll animation
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.fromTo(
+	'#projHeading',
+	{ y: 180, opacity: 0 },
+	{
+		duration: 1,
+		opacity: 1,
+		y: 0,
+		ease: 'ease',
+		scrollTrigger: '#projHeading'
+	}
+);
 gsap.fromTo(
 	'#imgOne',
 	{ x: -80, opacity: 0 },

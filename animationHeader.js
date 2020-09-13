@@ -3,23 +3,21 @@ gsap.fromTo(
 	'#animateName',
 	{ y: -100, opacity: 0 },
 	{
-		duration: 3,
+		duration: 4,
 		opacity: 1,
 		y: 0,
 
-		ease: 'bounce',
-		scrollTrigger: '#animateName'
+		ease: 'bounce'
 	}
 );
 gsap.fromTo(
 	'#animateSocial',
 	{ y: 100, opacity: 0 },
 	{
-		duration: 3,
+		duration: 4.5,
 		opacity: 1,
 		y: 0,
-
-		ease: 'bounce',
-		scrollTrigger: '#animateSocial'
+		delay: 1,
+		ease: 'bounce'
 	}
 );
