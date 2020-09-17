@@ -103,7 +103,7 @@ body {
   margin-bottom: 1rem; }
 
 .u-margin-medium-top {
-  margin-top: 2.5rem; }
+  margin-top: 2.05rem; }
 
 .u-margin-medium {
   margin-bottom: 6rem; }
@@ -129,8 +129,7 @@ body {
   color: transparent; }
 
 .btn, .btn:visited, .btn:link {
-  width: 15rem;
-  color: white;
+  width: 10rem;
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(52, 94, 253, 0.4);
   text-align: center;
   display: inline-block;
@@ -154,17 +153,30 @@ body {
   box-shadow: 0 1rem 0.1rem rgba(52, 94, 253, 0.2); }
 
 .btn-blue {
+  color: white;
   border-radius: .5rem;
-  padding: 1.4rem 2rem;
+  padding: 1.22rem 1.5rem;
+  font-size: 1.24rem;
   background: #396afc;
   background: -webkit-linear-gradient(to right, #2948ff, #396afc);
   background: linear-gradient(to right, #2948ff, #396afc); }
 
-.btn-purple {
-  background: #6411e1;
-  border-radius: .8rem;
-  padding: 1.5rem 2.5rem;
-  font-size: 2rem; }
+.btn-white {
+  border: .3rem solid #396afc;
+  border-radius: .5rem;
+  padding: .9rem 1rem;
+  background-color: #ffffff;
+  font-size: 1.24rem; }
+
+.btn-resume {
+  color: white;
+  width: 14rem;
+  border-radius: .5rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.2rem;
+  background: #396afc;
+  background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+  background: linear-gradient(to right, #2948ff, #396afc); }
 
 .project {
   border-bottom: 0.5px solid #b4b1b1;
@@ -223,6 +235,12 @@ body {
   .project__link:link, .project__link:visited {
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .project__visit:link, .project__visit:visited {
+    text-decoration: none;
+    color: #396afc;
+    font-weight: 600;
     text-transform: uppercase; }
 
 .bg-video {

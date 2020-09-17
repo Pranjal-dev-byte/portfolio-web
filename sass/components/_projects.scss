@@ -69,6 +69,16 @@
 			text-decoration: none;
 			color: $color-white;
 			text-transform: uppercase;
+			font-weight: 500;
+		}
+	}
+	&__visit{
+		&:link,
+		&:visited {
+			text-decoration: none;
+					color:#396afc;
+			font-weight: 600;
+			text-transform: uppercase;
 		}
 	}
 }
