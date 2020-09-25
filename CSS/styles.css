@@ -323,7 +323,8 @@ body {
   align-items: center; }
 
 .nav__item {
-  margin: 1rem 2rem; }
+  margin: .2rem 1.2rem;
+  padding: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .nav__item {
       margin: 2.5rem 2rem 0 2rem; } }
@@ -332,11 +333,9 @@ body {
   transition: all .2s; }
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
-    color: #f0f0f0;
+    color: white;
     text-transform: uppercase;
     font-size: 1.8rem; }
-  .nav__link:hover, .nav__link:active {
-    color: white; }
   @media only screen and (max-width: 37.5em) {
     .nav__link {
       margin: 0 1rem;
@@ -365,6 +364,11 @@ body {
     .nav__ham {
       height: 3rem;
       display: inline-block; } }
+
+.nav__color {
+  transition: color 1.5s;
+  background-color: #298df8;
+  border-radius: .5rem; }
 
 .fixed nav {
   position: fixed;

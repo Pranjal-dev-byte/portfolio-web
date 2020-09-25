@@ -19,9 +19,9 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-
 	&__item {
-		margin: 1rem 2rem;
+		margin: .2rem 1.2rem;
+		padding: 1.5rem;
 		@include respond(phone) {
 			margin: 2.5rem 2rem 0 2rem;
 		}
@@ -31,19 +31,16 @@
 		&:link,
 		&:visited {
 			text-decoration: none;
-			color: hsl(0, 0%, 94%);
+			color: $color-white;
 			text-transform: uppercase;
 			font-size: 1.8rem;
-		}
-		&:hover,
-		&:active {
-			color: $color-white;
 		}
 		@include respond(phone) {
 			margin: 0 1rem;
 			font-size: 2rem !important;
 		}
 	}
+	
 	&__logo {
 		outline: none;
 		height: 5rem;
@@ -69,7 +66,13 @@
 			display: inline-block; // margin-left: 20rem;
 		}
 	}
+	&__color{
+		transition:color 1.5s;
+		background-color: #298df8;
+		border-radius: .5rem;
+	}
 }
+
 .fixed nav {
 	position: fixed;
 	width: 100%;
