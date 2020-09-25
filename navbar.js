@@ -27,15 +27,17 @@ const topAbout = about.offsetTop;
 const topHome = home.offsetTop;
 
 function animateNav() {
-	if (window.scrollY >= 0 && window.scrollY <= topAbout - 100 && window.scrollY <= topProject - 100) {
+	if (window.scrollY >= 0 && window.scrollY <= topAbout - 150 && window.scrollY <= topProject - 150) {
 		homeLink.classList.add('nav__color');
 		aboutLink.classList.remove('nav__color');
-	} else if (window.scrollY >= topAbout - 100 && window.scrollY <= topProject - 100) {
+		projectLink.classList.remove('nav__color');
+	} else if (window.scrollY >= topAbout - 150 && window.scrollY <= topProject - 150) {
 		homeLink.classList.remove('nav__color');
 		projectLink.classList.remove('nav__color');
 		aboutLink.classList.add('nav__color');
-	} else if (window.scrollY >= topProject - 100) {
+	} else if (window.scrollY >= topProject - 150) {
 		aboutLink.classList.remove('nav__color');
+		homeLink.classList.remove('nav__color');
 		projectLink.classList.add('nav__color');
 	}
 }
